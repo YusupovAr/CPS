@@ -31,8 +31,16 @@
     background-color: #fff;
     flex-shrink: 0;
 
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+
     @media (min-width: 768px) {
         width: 190px;
+
+        &:not(:last-child) {
+            margin-right: 0;
+        }
     }
 
     @media (min-width: 1120px) {
