@@ -14,13 +14,13 @@
     }
 
     &--open::before {
-        content: url(../image/read-open.svg);
+        content: url(../img/read-open.svg);
         margin-right: 10px;
         vertical-align: middle;
     }
 
     &--close::before {
-        content: url(../image/read-close.svg);
+        content: url(../img/read-close.svg);
         margin-right: 10px;
         vertical-align: middle;
     }
