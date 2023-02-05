@@ -869,8 +869,6 @@ template {
 .brand-list {
   list-style: none;
   padding: 0; }
-  .brand-list:not(:last-child) {
-    margin-right: 16px; }
   @media (min-width: 768px) {
     .brand-list {
       display: flex;
@@ -897,6 +895,8 @@ template {
   border-radius: 6px;
   background-color: #fff;
   flex-shrink: 0; }
+  .brand-list__item:not(:last-child) {
+    margin-right: 16px; }
   @media (min-width: 768px) {
     .brand-list__item {
       width: 190px; } }
