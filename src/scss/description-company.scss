@@ -8,18 +8,34 @@
 
 .company__description {
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 13px;
 
     &--open {
-        height: 90px;
+        height: 80px;
         overflow: hidden;
 
+        @media (min-width: 338px) {
+            height: 64px;
+        }
+
+        @media (min-width: 449px) {
+            height: 48px;
+        }
+
+        @media (min-width: 623px) {
+            height: 32px;
+        }
+
         @media (min-width: 768px) {
-            height: 124px;
+            height: 125px;
+        }
+
+        @media (min-width: 999px) {
+            height: 110px;
         }
     
-        @media (min-width: 1024px) {
-            height: 105px;
+        @media (min-width: 1023px) {
+            height: 94px;
         }
     }
 
