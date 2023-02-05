@@ -6,8 +6,8 @@
     flex-direction: column;
     padding: 24px 16px 16px 16px; 
     height: 100vh;
-    min-width: 320px;
-    max-width: 440px;
+    min-width: 288px;
+    max-width: 408px;
     background-color: #fff;
     transition: 0.5s;
     overflow: auto;
@@ -61,4 +61,5 @@
 
 .sidebar-call__send {
     margin-left: auto;
+    margin-bottom: 75px;
 }
