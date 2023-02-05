@@ -895,9 +895,13 @@ template {
   border-radius: 6px;
   background-color: #fff;
   flex-shrink: 0; }
+  .brand-list__item:not(:last-child) {
+    margin-right: 16px; }
   @media (min-width: 768px) {
     .brand-list__item {
-      width: 190px; } }
+      width: 190px; }
+      .brand-list__item:not(:last-child) {
+        margin-right: 0; } }
   @media (min-width: 1120px) {
     .brand-list__item {
       width: 206px; } }
