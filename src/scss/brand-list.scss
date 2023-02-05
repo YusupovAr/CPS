@@ -2,10 +2,6 @@
     list-style: none;
     padding: 0;
 
-    &:not(:last-child) {
-        margin-right: 16px;
-    }
-
     @media (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -34,6 +30,10 @@
     border-radius: 6px;
     background-color: #fff;
     flex-shrink: 0;
+
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
 
     @media (min-width: 768px) {
         width: 190px;
