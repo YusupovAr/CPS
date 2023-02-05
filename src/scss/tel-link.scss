@@ -1,0 +1,12 @@
+.tel-link {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: $main_text;
+
+    &:hover,
+    &:active {
+        text-decoration: underline;
+        color: $color_2
+    }
+}

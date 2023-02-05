@@ -1,0 +1,15 @@
+.wrapper-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 320px;
+    overflow: hidden;
+
+    @media (min-width: 1440px) {
+        max-width: 1120px;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

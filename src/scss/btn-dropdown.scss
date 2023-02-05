@@ -1,0 +1,27 @@
+.btn-dropdown {
+    padding: 0;
+    font-family: "TT Lakes", sans-serif;
+    font-weight: 500;
+    border: none;
+    color: $main_text;
+    background-color: inherit;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        transition: 0.3s;
+        opacity: 0.6;
+    }
+
+    &--open::before {
+        content: url(../image/read-open.svg);
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    &--close::before {
+        content: url(../image/read-close.svg);
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+}

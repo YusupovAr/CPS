@@ -1,0 +1,11 @@
+.link-sidebar {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: $btn;
+
+    &:hover,
+    &:active {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,14 @@
+.nav-link {
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none;
+    border: 2px solid $bcg;
+    border-radius: 6px;
+    color: $color_2;
+
+    &:hover,
+    &:active {
+        background-color: #fff;
+        border: 2px solid $nav_hover;
+    }
+}

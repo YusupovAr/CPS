@@ -1,0 +1,18 @@
+.text-footer {
+    font-size: 14px;
+    color: $color_2;
+
+    &--link {
+        display: inline-block;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    @media (min-width: 768px) {
+        width: 33.333%;
+    }
+}

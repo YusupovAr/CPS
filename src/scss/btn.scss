@@ -1,0 +1,42 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    min-height: 40px;
+    border: 1px solid $btn;
+    border-radius: 50%;
+    background-color: $btn;
+    cursor: pointer;
+
+    &--inverse {
+        background-color: inherit;
+        border: 2px solid $btn;
+    }
+
+    &--ellipse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "TT Lakes", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        min-width: 120px;
+        min-height: 32px;
+        border-radius: 16px;
+        color: #fff;
+
+        &::after {
+            content: url(../image/btn-order.svg);
+            margin-left: 10px;
+        }
+    }
+
+    &:hover,
+    &:active {
+        transition: 0.3s;
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}

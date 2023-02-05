@@ -1,0 +1,10 @@
+.email-link {
+    text-decoration: none;
+    color: $main_text;
+
+    &:hover,
+    &:active {
+        text-decoration: underline;
+        color: $color_2
+    }
+}

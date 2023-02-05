@@ -1,0 +1,97 @@
+.section {
+    border-bottom: 1px solid $block_border;
+}
+
+// title
+
+.section__title {
+    margin: 0;
+    padding: 16px;
+
+    @media (min-width: 768px) {
+        padding: 24px;
+    }
+
+    @media (min-width: 1120px) {
+        padding: 24px 32px;
+    }
+}
+
+// section wrapper and brand
+
+.section__wrapper {
+    padding: 16px 16px 42px 16px;
+
+    @media (min-width: 768px) {
+        padding: 24px;
+    }
+
+    @media (min-width: 1120px) {
+        padding: 24px 32px;
+    }
+
+    .section__brand {
+        margin: 0;
+    }
+
+    .section__btn-brands {
+        display: none;
+    
+        @media (min-width: 768px) {
+            display: inline-block;
+            margin-top: 8px;
+            margin-left: 10px;
+        }
+    }
+}
+
+// section technics
+
+.section__technics {
+    margin: 0;
+}
+
+.section__btn-technics {
+    display: none;
+
+    @media (min-width: 768px) {
+        display: inline-block;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+}
+
+// section services
+
+.section__services {
+    margin: 0;
+}
+
+// section condition
+
+.section_condition {
+    margin: 0 16px;
+
+    @media (min-width: 768px) {
+        width: 420px;
+        margin: 0 24px;
+    }
+
+    @media (min-width: 1120px) {
+        margin: 0 32px;
+    }
+}
+
+// section link
+
+.section__link {
+    margin: 16px 16px 32px 16px;
+
+    @media (min-width: 768px) {
+        margin: 16px 24px 32px 24px;
+    }
+
+    @media (min-width: 1120px) {
+        margin: 16px 32px 32px 32px;
+    }
+}

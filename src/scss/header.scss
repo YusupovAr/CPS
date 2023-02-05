@@ -1,0 +1,137 @@
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: 1440px) {
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $bcg;
+    }
+}
+
+// title
+
+.header__title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 24px 16px;
+
+    &::before {
+        content: '';
+        margin-left: -20px;
+        margin-right: 12px;
+        width: 8px;
+        height: 40px;
+        border-radius: 6px;
+        background-color: $color_1;
+    }
+
+    @media (min-width: 768px) {
+        padding: 24px 24px 32px 24px;
+
+        &::before {
+            margin-left: -28px;
+            margin-right: 20px;
+        }
+    }
+
+    @media (min-width: 1120px) {
+        padding: 24px 32px 32px 32px;
+
+        &::before {
+            margin-left: -36px;
+            margin-right: 28px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        padding: 40px 32px 20px 32px;
+    }
+}
+
+// header wrapper
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid $block_border;
+
+    @media (min-width: 768px) {
+        padding: 24px;
+    }
+
+    @media (min-width: 1120px) {
+        padding: 24px 32px;
+    }
+}
+
+// menu
+
+.header__block-menu {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    .header__btn-menu {
+        margin-right: 16px;
+    }
+
+    @media (min-width: 1440px) {
+        display: none;
+    }
+}
+
+// block communication
+
+.header__block-communication {
+    display: none;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        margin-right: 16px;
+        display: flex;
+    }
+
+    @media (min-width: 1440px) {
+        display: none;
+    }
+}
+
+// block repair
+
+.header__block-repair {
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        margin-right: 16px;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background-color: $card_border;
+
+        @media (min-width: 1440px) {
+            display: none;
+        }
+    }
+
+    .btn:nth-child(2) {
+        margin-right: 16px;
+
+        @media (min-width: 1440px) {
+            margin-right: 32px;
+        }
+    }
+}
+
+.header__btn-text {
+    display: none;
+
+    @media (min-width: 1440px) {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}

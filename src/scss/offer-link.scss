@@ -1,0 +1,20 @@
+.offer-link {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: $main_text;
+    text-decoration: none;
+
+    &::after {
+        content: url(../image/buttons/btn-open.svg);
+        vertical-align: middle;
+        margin-left: 8px;  
+    }
+
+    &:hover,
+    &:active {
+        transition: 0.3s;
+        opacity: 0.6;
+        text-decoration-line: underline;
+    }
+}

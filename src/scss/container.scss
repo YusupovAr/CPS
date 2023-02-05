@@ -1,0 +1,10 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    overflow: hidden;
+
+    @media (min-width: 1440px) {
+        display: flex;
+    }
+}

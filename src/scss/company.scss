@@ -1,0 +1,19 @@
+.company {
+    border-bottom: 1px solid $block_border;
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
+
+    .company__wrapper {
+        margin: 0 16px 16px 16px;
+
+        @media (min-width: 768px) {
+            margin: 0 24px 24px 24px;
+        }
+
+        @media (min-width: 1120px) {
+            margin: 0 32px 24px 32px;
+        }
+    }
+}
