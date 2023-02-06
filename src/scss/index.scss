@@ -2,6 +2,9 @@
 @import 'fonts.scss';
 @import 'variables.scss';
 
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
 @import 'body.scss';
 @import 'container.scss';
 @import 'sidebar.scss';
