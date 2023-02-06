@@ -1,23 +1,23 @@
-const openSidebar = document.querySelector('.header__btn-menu')
-const closeSidebar = document.querySelector('.sidebar__btn-menu')
-const sidebar = document.querySelector('.sidebar')
-const body = document.querySelector('body')
+const openMenuSidebar = document.querySelector('.header__btn-menu')
+const closeMenuSidebar = document.querySelector('.sidebar__btn-menu')
+const menuSidebar = document.querySelector('.sidebar')
+const scrollLock = document.querySelector('body')
 const overlay = document.querySelector('.overlay')
 
-openSidebar.addEventListener('click', function () {
-    sidebar.classList.toggle('sidebar--open')
-    body.classList.add('body--block')
+openMenuSidebar.addEventListener('click', function () {
+    menuSidebar.classList.toggle('sidebar--open')
+    scrollLock.classList.add('scroll-lock')
     overlay.classList.add('overlay--active')
 });
 
-closeSidebar.addEventListener('click', function () {
-    sidebar.classList.toggle('sidebar--open')
-    body.classList.remove('body--block')
+closeMenuSidebar.addEventListener('click', function () {
+    menuSidebar.classList.toggle('sidebar--open')
+    scrollLock.classList.remove('scroll-lock')
     overlay.classList.remove('overlay--active')
 });
 
 overlay.addEventListener('click', function () {
-    sidebar.classList.remove('sidebar--open')
-    body.classList.remove('body--block')
+    menuSidebar.classList.remove('sidebar--open')
+    scrollLock.classList.remove('scroll-lock')
     overlay.classList.remove('overlay--active')
 });

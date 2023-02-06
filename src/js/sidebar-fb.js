@@ -1,32 +1,32 @@
-const openSidebar = document.querySelector('.header__block-communication .btn-communication__item:nth-child(2)')
-const openSidebarMenu = document.querySelector('.sidebar__communication .btn-communication__item:nth-child(2)')
-const closeSidebar = document.querySelector('.sidebar-fb__close')
-const sidebar = document.querySelector('.sidebar-fb')
-const sidebarMenu = document.querySelector('.sidebar')
-const body = document.querySelector('body')
+const openFbSidebar = document.querySelector('.header__block-communication .btn-communication__item:nth-child(2)')
+const closeFbSidebar = document.querySelector('.sidebar-fb__close')
+const openMenuSidebar = document.querySelector('.sidebar__communication .btn-communication__item:nth-child(2)')
+const fbSidebar = document.querySelector('.sidebar-fb')
+const menuSidebar = document.querySelector('.sidebar')
+const scrollLock = document.querySelector('body')
 const overlay = document.querySelector('.overlay')
 
-openSidebar.addEventListener('click', function () {
-    sidebar.classList.add('sidebar-fb--open')
-    body.classList.add('body--block')
+openFbSidebar.addEventListener('click', function () {
+    fbSidebar.classList.add('sidebar-fb--open')
+    scrollLock.classList.add('scroll-lock')
     overlay.classList.add('overlay--active')
 });
 
-openSidebarMenu.addEventListener('click', function () {
-    sidebarMenu.classList.remove('sidebar--open')
-    sidebar.classList.add('sidebar-fb--open')
-    body.classList.add('body--block')
+openMenuSidebar.addEventListener('click', function () {
+    menuSidebar.classList.remove('sidebar--open')
+    fbSidebar.classList.add('sidebar-fb--open')
+    scrollLock.classList.add('scroll-lock')
     overlay.classList.add('overlay--active')
 });
 
-closeSidebar.addEventListener('click', function () {
-    sidebar.classList.remove('sidebar-fb--open')
-    body.classList.remove('body--block')
+closeFbSidebar.addEventListener('click', function () {
+    fbSidebar.classList.remove('sidebar-fb--open')
+    scrollLock.classList.remove('scroll-lock')
     overlay.classList.remove('overlay--active')
 });
 
 overlay.addEventListener('click', function () {
-    sidebar.classList.remove('sidebar-fb--open')
-    body.classList.remove('body--block')
+    fbSidebar.classList.remove('sidebar-fb--open')
+    scrollLock.classList.remove('scroll-lock')
     overlay.classList.remove('overlay--active')
 });

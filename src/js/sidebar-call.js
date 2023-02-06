@@ -1,32 +1,32 @@
-const openSidebarFeedback = document.querySelector('.header__block-communication .btn-communication__item:nth-child(1)')
-const openSidebarMenu = document.querySelector('.sidebar__communication .btn-communication__item:nth-child(1)')
-const closeSidebarFeedback = document.querySelector('.sidebar-call__close')
-const sidebar = document.querySelector('.sidebar-call')
-const sidebarMenu = document.querySelector('.sidebar')
-const body = document.querySelector('body')
+const openCallSidebar = document.querySelector('.header__block-communication .btn-communication__item:nth-child(1)')
+const closeCallSidebar = document.querySelector('.sidebar-call__close')
+const openMenuSidebar = document.querySelector('.sidebar__communication .btn-communication__item:nth-child(1)')
+const callSidebar = document.querySelector('.sidebar-call')
+const menuSidebar = document.querySelector('.sidebar')
+const scrollLock = document.querySelector('body')
 const overlay = document.querySelector('.overlay')
 
-openSidebarFeedback.addEventListener('click', function () {
-    sidebar.classList.toggle('sidebar-call--open')
-    body.classList.add('body--block')
+openCallSidebar.addEventListener('click', function () {
+    callSidebar.classList.toggle('sidebar-call--open')
+    scrollLock.classList.add('scroll-lock')
     overlay.classList.add('overlay--active')
 });
 
-openSidebarMenu.addEventListener('click', function () {
-    sidebarMenu.classList.remove('sidebar--open')
-    sidebar.classList.add('sidebar-call--open')
-    body.classList.add('body--block')
+openMenuSidebar.addEventListener('click', function () {
+    menuSidebar.classList.remove('sidebar--open')
+    callSidebar.classList.add('sidebar-call--open')
+    scrollLock.classList.add('scroll-lock')
     overlay.classList.add('overlay--active')
 });
 
-closeSidebarFeedback.addEventListener('click', function () {
-    sidebar.classList.toggle('sidebar-call--open')
-    body.classList.remove('body--block')
+closeCallSidebar.addEventListener('click', function () {
+    callSidebar.classList.toggle('sidebar-call--open')
+    scrollLock.classList.remove('scroll-lock')
     overlay.classList.remove('overlay--active')
 });
 
 overlay.addEventListener('click', function () {
-    sidebar.classList.remove('sidebar-call--open')
-    body.classList.remove('body--block')
+    callSidebar.classList.remove('sidebar-call--open')
+    scrollLock.classList.remove('scroll-lock')
     overlay.classList.remove('overlay--active')
 });
