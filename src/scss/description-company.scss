@@ -38,13 +38,12 @@
             height: 94px;
         }
     }
-
-    .description-company__item:not(:first-child) {
-        margin-top: 14px;
-    }
-
     .description-company__text {
         margin: 0;
+    }
+
+    .description-company__text:not(:first-child) {
+        margin-top: 14px;
     }
 }
 
