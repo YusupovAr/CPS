@@ -1346,14 +1346,14 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 
 .technics-list {
   list-style: none;
-  padding: 0;
-  row-gap: 16px;
-  -moz-column-gap: 24px;
-       column-gap: 24px; }
+  padding: 0; }
   @media (min-width: 768px) {
     .technics-list {
       display: flex;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      row-gap: 16px;
+      -moz-column-gap: 24px;
+           column-gap: 24px; }
       .technics-list--open {
         height: 194px;
         overflow: hidden; } }
@@ -1374,6 +1374,8 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   border-radius: 6px;
   background-color: #fff;
   flex-shrink: 0; }
+  .technics-list__item:not(:last-child) {
+    margin-right: 16px; }
   .technics-list__item .technics-list__type {
     align-self: flex-start;
     margin: 0; }
