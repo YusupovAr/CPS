@@ -1300,6 +1300,9 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 
 .swiper-pagination-bullet {
   background-color: #7E7E82; }
+  @media (min-width: 768px) {
+    .swiper-pagination-bullet {
+      display: none; } }
 
 .brand-list {
   list-style: none;
