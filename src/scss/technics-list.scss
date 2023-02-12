@@ -1,12 +1,12 @@
 .technics-list {
     list-style: none;
     padding: 0;
-    row-gap: 16px;
-    column-gap: 24px;
 
     @media (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
+        row-gap: 16px;
+        column-gap: 24px;
 
         &--open {
             height: 194px;
@@ -31,6 +31,10 @@
     border-radius: 6px;
     background-color: #fff;
     flex-shrink: 0;
+
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
 
     .technics-list__type {
         align-self: flex-start;
