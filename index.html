@@ -66,17 +66,17 @@
                     </li>
                 </ul>
                 <ul class="btn-communication sidebar__communication">
-                    <li class="btn-communication__item">
+                    <li class="btn-communication__item-call">
                         <button class="btn">
                             <img src="img/phone.svg" alt="">
                         </button>
                     </li>
-                    <li class="btn-communication__item">
+                    <li class="btn-communication__item-chat">
                         <button class="btn">
                             <img src="img/chat.svg" alt="">
                         </button>
                     </li>
-                    <li class="btn-communication__item">
+                    <li class="btn-communication__item-contacts">
                         <button class="btn">
                             <img src="img/contacts.svg" alt="">
                         </button>
@@ -109,17 +109,17 @@
                             </a>
                         </div>
                         <ul class="btn-communication header__block-communication">
-                            <li class="btn-communication__item">
+                            <li class="btn-communication__item-call">
                                 <button class="btn">
                                     <img src="img/phone.svg" alt="">
                                 </button>
                             </li>
-                            <li class="btn-communication__item">
+                            <li class="btn-communication__item-chat">
                                 <button class="btn">
                                     <img src="img/chat.svg" alt="">
                                 </button>
                             </li>
-                            <li class="btn-communication__item">
+                            <li class="btn-communication__item-contacts">
                                 <button class="btn">
                                     <img src="img/contacts.svg" alt="">
                                 </button>
@@ -137,30 +137,30 @@
                         </div>
                     </div>
                 </header>
-                <div class="sidebar-fb">
-                    <button class="btn sidebar-fb__close">
+                <div class="popup-feedback">
+                    <button class="btn popup-feedback__close">
                         <img src="img/close.svg" alt="">
                     </button>
-                    <h1 class="title-sidebar sidebar-fb__title">Обратная связь</h1>
-                    <form class="form-sidebar sidebar-fb__form" action="">
-                        <input class="form-sidebar__user" type="text" placeholder="Имя">
-                        <input class="form-sidebar__user" type="tel" placeholder="Телефон">
-                        <input class="form-sidebar__user" type="email" placeholder="Электронная почта">
-                        <textarea class="form-sidebar__user" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                    <h1 class="title-popup popup-feedback__title">Обратная связь</h1>
+                    <form class="form-popup popup-feedback__form" action="">
+                        <input class="form-popup__user" type="text" placeholder="Имя">
+                        <input class="form-popup__user" type="tel" placeholder="Телефон">
+                        <input class="form-popup__user" type="email" placeholder="Электронная почта">
+                        <textarea class="form-popup__user" cols="30" rows="5" placeholder="Сообщение"></textarea>
                     </form>
-                    <p class="text-sidebar sidebar-fb__text">Нажимая “отправить”, вы даете согласие на <a class="link-sidebar sidebar-fb__link" href="">обработку персональных данных</a> и соглашаетесь с нашей <a class="link-sidebar sidebar-fb__link" href="">политикой конфиденциальности</a></p>
-                    <button class="btn btn--ellipse sidebar-fb__send">Отправить</button>
+                    <p class="text-popup popup-feedback__text">Нажимая “отправить”, вы даете согласие на <a class="link-popup popup-feedback__link" href="">обработку персональных данных</a> и соглашаетесь с нашей <a class="link-popup popup-feedback__link" href="">политикой конфиденциальности</a></p>
+                    <button class="btn btn--ellipse popup-feedback__send">Отправить</button>
                 </div>
-                <div class="sidebar-call">
-                    <button class="btn sidebar-call__close">
+                <div class="popup-call">
+                    <button class="btn popup-call__close">
                         <img src="img/close.svg" alt="">
                     </button>
-                    <h1 class="title-sidebar sidebar-call__title">Заказать звонок</h1>
-                    <form class="form-sidebar sidebar-call__form" action="">
-                        <input class="form-sidebar__user" type="tel" placeholder="Телефон">
+                    <h1 class="title-popup popup-call__title">Заказать звонок</h1>
+                    <form class="form-popup popup-call__form" action="">
+                        <input class="form-popup__user" type="tel" placeholder="Телефон">
                     </form>
-                    <p class="text-sidebar sidebar-call__text">Нажимая “отправить”, вы даете согласие на <a class="link-sidebar sidebar-call__link" href="">обработку персональных данных</a> и соглашаетесь с нашей <a class="link-sidebar sidebar-call__link" href="">политикой конфиденциальности</a></p>
-                    <button class="btn btn--ellipse sidebar-call__send">Отправить</button>
+                    <p class="text-popup popup-call__text">Нажимая “отправить”, вы даете согласие на <a class="link-popup popup-call__link" href="">обработку персональных данных</a> и соглашаетесь с нашей <a class="link-popup popup-call__link" href="">политикой конфиденциальности</a></p>
+                    <button class="btn btn--ellipse popup-call__send">Отправить</button>
                 </div>
                 <nav class="nav">
                     <ul class="nav__list">
@@ -193,23 +193,17 @@
                 <main class="main">
                     <section class="company">
                         <div class="company__wrapper">
-                            <ul class="description-company company__description company__description--open">
-                                <li class="description-company__item">
-                                    <p class="text-description description-company__text">
-                                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                                    </p>
-                                </li>
-                                <li class="description-company__item">
-                                    <p class="text-description description-company__text">
-                                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                                    </p>
-                                </li>
-                                <li class="description-company__item">
-                                    <p class="text-description description-company__text">
-                                        Обращение в сервисный центр CPS – это самое простое и эффективное решение любых проблем, связанных с ремонтом любой офисной техники. Вы всегда сможете получить квалифицированную консультацию наших специалистов и гарантию на выполненные работы – 3 месяца.
-                                    </p>
-                                </li>
-                            </ul>
+                            <div class="description-company company__description company__description--open">
+                                <p class="text-description description-company__text">
+                                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                                </p>
+                                <p class="text-description description-company__text">
+                                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                                </p>
+                                <p class="text-description description-company__text">
+                                    Обращение в сервисный центр CPS – это самое простое и эффективное решение любых проблем, связанных с ремонтом любой офисной техники. Вы всегда сможете получить квалифицированную консультацию наших специалистов и гарантию на выполненные работы – 3 месяца.
+                                </p>
+                            </div>
                             <button class="btn-dropdown company__btn btn-dropdown--open" type="button">Показать всё</button>
                         </div>
                         <img class="company__img-nameplate" src="img/nameplate.png" alt="Табличка с логотипом компании">
@@ -285,14 +279,14 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="swiper-pagination"></div>
                             <button class="btn-dropdown section__btn-brands btn-dropdown--open" type="button">Показать всё</button>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </section>
                     <section class="section">
                         <h2 class="sub-title section__title">Ремонт различных видов техники</h2>
                         <div class="swiper section__wrapper">
-                            <ul class="swiper-wrapper section__technics technics-list technics-list--open">
+                            <ul class="swiper-wrapper section__technics technics-list technics-list--open bcg">
                                 <li class="swiper-slide technics-list__item">
                                     <p class="technics-list__type">Ремонт ноутбуков</p>
                                     <a class="btn btn--inverse" href="">
@@ -360,8 +354,8 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="swiper-pagination"></div>
                             <button class="btn-dropdown section__btn-technics btn-dropdown--open" type="button">Показать всё</button>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </section>
                     <section class="section">

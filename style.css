@@ -647,13 +647,16 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   flex-direction: column;
   padding: 16px;
   height: 100vh;
-  width: 288px;
+  width: calc(100% - 32px);
   background-color: #fff;
   transition: 0.5s;
   overflow: auto; }
   .sidebar--open {
     left: 0;
     box-shadow: 16px 0px 52px 0px #0E185033; }
+  @media (min-width: 426px) {
+    .sidebar {
+      width: 288px; } }
   @media (min-width: 768px) {
     .sidebar {
       padding: 24px; } }
@@ -804,7 +807,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   display: flex;
   padding: 0;
   list-style: none; }
-  .btn-communication__item:not(:last-child) {
+  .btn-communication__item-call, .btn-communication__item-chat {
     margin-right: 16px; }
 
 .email-link {
@@ -850,7 +853,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.7); }
 
-.sidebar-fb {
+.popup-feedback {
   position: absolute;
   z-index: 3;
   right: -200%;
@@ -864,20 +867,20 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   transition: 0.5s;
   overflow: auto; }
   @media (min-width: 440px) {
-    .sidebar-fb {
+    .popup-feedback {
       padding: 24px 32px 32px 32px; } }
-  .sidebar-fb--open {
+  .popup-feedback--open {
     right: 0;
     box-shadow: 16px 0px 52px 0px #0E185033; }
-  .sidebar-fb::-webkit-scrollbar {
+  .popup-feedback::-webkit-scrollbar {
     display: none; }
 
-.sidebar-fb__title {
+.popup-feedback__title {
   display: flex;
   align-items: center;
   margin-top: 40px;
   margin-bottom: 24px; }
-  .sidebar-fb__title::before {
+  .popup-feedback__title::before {
     content: '';
     margin-left: -20px;
     margin-right: 12px;
@@ -886,15 +889,15 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     border-radius: 6px;
     background-color: #41F6D7; }
     @media (min-width: 440px) {
-      .sidebar-fb__title::before {
+      .popup-feedback__title::before {
         margin-left: -36px;
         margin-right: 28px; } }
 
-.sidebar-fb__text {
+.popup-feedback__text {
   margin-top: 0;
   margin-bottom: 16px; }
 
-.sidebar-fb__send {
+.popup-feedback__send {
   margin-left: auto;
   margin-bottom: 75px; }
 
@@ -902,34 +905,34 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   font-size: 28px;
   color: #1B1C21; }
 
-.form-sidebar {
+.form-popup {
   display: flex;
   flex-direction: column; }
-  .form-sidebar__user {
+  .form-popup__user {
     font-family: "TT Lakes", sans-serif;
     font-size: 16px;
     margin-bottom: 16px;
     padding: 12px;
     border: 1px solid #EAEAEA;
     border-radius: 6px; }
-    .form-sidebar__user:focus {
+    .form-popup__user:focus {
       outline: none;
       border: 1px solid #41F6D7; }
 
-.text-sidebar {
+.text-popup {
   font-size: 14px;
   font-weight: 500;
   color: #7E7E82; }
 
-.link-sidebar {
+.link-popup {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   color: #FF3E79; }
-  .link-sidebar:hover, .link-sidebar:active {
+  .link-popup:hover, .link-popup:active {
     text-decoration: underline; }
 
-.sidebar-call {
+.popup-call {
   position: absolute;
   z-index: 3;
   right: -200%;
@@ -943,20 +946,20 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   transition: 0.5s;
   overflow: auto; }
   @media (min-width: 440px) {
-    .sidebar-call {
+    .popup-call {
       padding: 24px 32px 32px 32px; } }
-  .sidebar-call--open {
+  .popup-call--open {
     right: 0;
     box-shadow: 16px 0px 52px 0px #0E185033; }
-  .sidebar-call::-webkit-scrollbar {
+  .popup-call::-webkit-scrollbar {
     display: none; }
 
-.sidebar-call__title {
+.popup-call__title {
   display: flex;
   align-items: center;
   margin-top: 40px;
   margin-bottom: 24px; }
-  .sidebar-call__title::before {
+  .popup-call__title::before {
     content: '';
     margin-left: -20px;
     margin-right: 12px;
@@ -965,15 +968,15 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     border-radius: 6px;
     background-color: #41F6D7; }
     @media (min-width: 440px) {
-      .sidebar-call__title::before {
+      .popup-call__title::before {
         margin-left: -36px;
         margin-right: 28px; } }
 
-.sidebar-call__text {
+.popup-call__text {
   margin-top: 0;
   margin-bottom: 16px; }
 
-.sidebar-call__send {
+.popup-call__send {
   margin-left: auto;
   margin-bottom: 75px; }
 
@@ -1174,10 +1177,10 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     @media (min-width: 1023px) {
       .company__description--open {
         height: 94px; } }
-  .company__description .description-company__item:not(:first-child) {
-    margin-top: 14px; }
   .company__description .description-company__text {
     margin: 0; }
+  .company__description .description-company__text:not(:first-child) {
+    margin-top: 14px; }
 
 .company__btn {
   margin-left: 10px; }
