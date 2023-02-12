@@ -13,7 +13,9 @@ function initSwiper() {
             }
         });
     } if (screenWidth > 768 && mySwiper != undefined) {
-        mySwiper.destroy(true, true);
+        for (let swiper of mySwiper) {
+            swiper.destroy(true, true);
+        }
         mySwiper = undefined;
     }
 }
