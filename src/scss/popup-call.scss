@@ -1,4 +1,4 @@
-.sidebar-fb {
+.popup-call {
     position: absolute;
     z-index: 3;
     right: -200%;
@@ -26,15 +26,9 @@
     }
 }
 
-.sidebar-fb__close {
-    @media (min-width: 768px) {
-
-    }
-}
-
 // title
 
-.sidebar-fb__title {
+.popup-call__title {
     display: flex;
     align-items: center;
     margin-top: 40px;
@@ -58,14 +52,14 @@
 
 // feedback text
 
-.sidebar-fb__text {
+.popup-call__text {
     margin-top: 0;
     margin-bottom: 16px;
 }
 
 // feedback btn
 
-.sidebar-fb__send {
+.popup-call__send {
     margin-left: auto;
     margin-bottom: 75px;
 }

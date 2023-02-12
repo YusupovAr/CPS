@@ -1,4 +1,4 @@
-.sidebar-call {
+.popup-feedback {
     position: absolute;
     z-index: 3;
     right: -200%;
@@ -26,9 +26,15 @@
     }
 }
 
+.popup-feedback__close {
+    @media (min-width: 768px) {
+
+    }
+}
+
 // title
 
-.sidebar-call__title {
+.popup-feedback__title {
     display: flex;
     align-items: center;
     margin-top: 40px;
@@ -52,14 +58,14 @@
 
 // feedback text
 
-.sidebar-call__text {
+.popup-feedback__text {
     margin-top: 0;
     margin-bottom: 16px;
 }
 
 // feedback btn
 
-.sidebar-call__send {
+.popup-feedback__send {
     margin-left: auto;
     margin-bottom: 75px;
 }

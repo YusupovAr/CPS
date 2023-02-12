@@ -3,7 +3,8 @@
     padding: 0;
     list-style: none;
 
-    &__item:not(:last-child) {
+    &__item-call,
+    &__item-chat {
         margin-right: 16px;
     }
 }

@@ -1,8 +1,10 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
+let mySwiper = undefined;
 
-function mySwiper() {
-    if (window.matchMedia('(width < 768px)').matches) {
-        new Swiper('.swiper', {
+function initSwiper() {
+    let screenWidth = window.innerWidth;
+    if (screenWidth < 768 && mySwiper === undefined) {
+        mySwiper = new Swiper('.swiper', {
             modules: [Navigation, Pagination],
             slidesPerView: 'auto',
             pagination: {
@@ -10,6 +12,12 @@ function mySwiper() {
                 clickable: true,
             }
         });
+    } if (screenWidth > 768 && mySwiper != undefined) {
+        mySwiper.destroy(true, true);
+        mySwiper = undefined;
     }
-};
-mySwiper();
+}
+initSwiper()
+window.addEventListener('resize', function() {
+    initSwiper()
+});
