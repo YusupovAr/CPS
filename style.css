@@ -1381,7 +1381,9 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     margin: 0; }
   @media (min-width: 768px) {
     .technics-list__item {
-      width: 190px; } }
+      width: 190px; }
+      .technics-list__item:not(:last-child) {
+        margin-right: 0; } }
   @media (min-width: 1120px) {
     .technics-list__item {
       width: 206px; } }
